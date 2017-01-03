@@ -1,17 +1,17 @@
 import { ModuleWithProviders } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
-import { DashboardComponent } from "./dashboard.component";
+import { DataDisplayComponent } from "./data-display.component";
 
 const appRoutes: Routes = [
   {
     path: "",
-    redirectTo: "/dashboard",
+    redirectTo: "/data-display",
     pathMatch: "full",
   },
   {
-    path: "dashboard",
-    component: DashboardComponent,
+    path: "data-display",
+    component: DataDisplayComponent,
   },
 ];
 

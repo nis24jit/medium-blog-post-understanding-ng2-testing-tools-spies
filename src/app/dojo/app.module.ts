@@ -1,13 +1,14 @@
 import { NgModule } from "@angular/core";
-import { BrowserModule }  from "@angular/platform-browser";
+import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { MaterialModule } from "@angular/material";
 
 import { AppComponent } from "./app.component";
-import { DashboardComponent } from "./dashboard.component";
+import { DataDisplayComponent } from "./data-display.component";
 
 import { routing } from "./app.routing";
+import { DataService } from "./services";
 
 @NgModule({
   imports: [
@@ -20,9 +21,10 @@ import { routing } from "./app.routing";
   ],
   declarations: [
     AppComponent,
-    DashboardComponent,
+    DataDisplayComponent,
   ],
   providers: [
+    DataService,
   ],
   bootstrap: [
     AppComponent,
